@@ -44,7 +44,7 @@ import VisibilityToggles from 'react-visibility-toggles';
 
 This checks `visible` flag by default but you can override that here.
 
-**`props = { container: {}, label: {}, toggle: {} }`
+**`props = { container: {}, label: {}, toggle: {} }`**
 
 Props attached to different parts of the component.
 
