@@ -2,7 +2,7 @@
 
 # react-visibility-toggles - Visibility toggles for React
 
-`react-visibility-toggles` provides a React component for rendering visibility toggles for table columns.
+`react-visibility-toggles` provides a React component for rendering visibility toggles for table columns. It works well with Reactabular.
 
 ## API
 
