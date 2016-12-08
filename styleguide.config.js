@@ -3,7 +3,7 @@ const merge = require('webpack-merge');
 const pkg = require('./package.json');
 
 module.exports = {
-  title: pkg.name + ' ' + pkg.version,
+  title: pkg.name + ' ' + pkg.version, // eslint-disable-line prefer-template
   components: './src/**/*.js',
   updateWebpackConfig(config) {
     return merge(
