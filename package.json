@@ -43,6 +43,7 @@
   "bugs": {
     "url": "https://github.com/reactabular/react-visibility-toggles/issues"
   },
+  "homepage": "https://reactabular.github.io/react-visibility-toggles/",
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
