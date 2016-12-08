@@ -3,7 +3,7 @@ const merge = require('webpack-merge');
 const pkg = require('./package.json');
 
 module.exports = {
-  title: pkg.name,
+  title: pkg.name + ' ' + pkg.version,
   components: './src/**/*.js',
   updateWebpackConfig(config) {
     return merge(
