@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+/* eslint-disable react/prop-types, no-unused-vars */
 // XXX: The prop type checking bugs out for some reason partially.
 import React from 'react';
 
@@ -49,9 +49,28 @@ const VisibilityToggles = ({
   </div>
 );
 VisibilityToggles.propTypes = {
+  /**
+   * Example: \[
+   *   {
+   *     header: {
+   *       label: 'Name'
+   *     },
+   *     visible: true
+   *   },
+   *   {
+   *     header: {
+   *       label: 'Age'
+   *     },
+   *     visible: false
+   *   }
+   * \]
+   */
   columns: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-  onToggleColumn: React.PropTypes.func.isRequired,
+  onToggleColumn: React.PropTypes.func,
   isVisible: React.PropTypes.func,
+  /**
+   * Props attached to different parts of the component.
+   */
   props: React.PropTypes.shape({
     container: React.PropTypes.object,
     label: React.PropTypes.object,
@@ -60,6 +79,7 @@ VisibilityToggles.propTypes = {
   })
 };
 VisibilityToggles.defaultProps = {
+  onToggleColumn: ({ column, columnIndex }) => {},
   isVisible: ({ column }) => column.visible
 };
 

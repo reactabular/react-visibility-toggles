@@ -1,5 +1,11 @@
 ## react-visibility-toggles
 
+1.1.0 / 2016-12-08
+==================
+
+  * Documentation - Implement proper documentation site using `react-styleguidist`.
+  * Feature - Allow `onToggleColumn` to be optional. This worked out better with `react-styleguidist`.
+
 1.0.0 / 2016-11-27
 ==================
 

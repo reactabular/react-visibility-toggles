@@ -4,25 +4,14 @@
 
 `react-visibility-toggles` provides a React component for rendering visibility toggles for table columns. It works well with Reactabular.
 
-## API
+## Example
 
-```javascript
-import VisibilityToggles from 'react-visibility-toggles';
-
-...
-
-<VisibilityToggles
-  columns={columns}
-  onToggleColumn={this.onToggleColumn}
-  isVisible={this.isVisible}
-  props={{}}
-/>
 ```
+/*
+import VisibilityToggles from 'react-visibility-toggles';
+*/
 
-**`columns` - [<column>]**
-
-```javascript
-[
+const columns = [
   {
     header: {
       label: 'Name'
@@ -35,30 +24,25 @@ import VisibilityToggles from 'react-visibility-toggles';
     },
     visible: false
   }
-]
+];
+
+<VisibilityToggles
+  columns={columns}
+  onToggleColumn={({ column, columnIndex }) => console.log(column, columnIndex)}
+  isVisible={({ column }) => column.visible}
+  props={{}}
+/>
 ```
 
-**`onToggleColumn = ({ column, columnIndex }) => ...`**
+## Integrating with Reactabular
 
-**`isVisible = ({ column }) => <boolean>`**
+The following example shows how to integrate `react-visibility-toggles` with Reactabular:
 
-This checks `visible` flag by default but you can override that here.
-
-**`props = { container: {}, label: {}, toggle: {} }`**
-
-Props attached to different parts of the component.
-
-## How to Use?
-
-The following example shows how to integrate `react-visibility-toggles` with Reactabular.
-
-**Example:**
-
-```jsx
+```javascript
 /*
 import React from 'react';
 import * as Table from 'reactabular-table';
-import cloneDeep from 'lodash/cloneDeep';
+import { cloneDeep } from 'lodash';
 import VisibilityToggles from 'react-visibility-toggles';
 */
 
