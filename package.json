@@ -67,7 +67,8 @@
     "react-dom": "^15.4.1",
     "react-styleguidist": "^4.4.1",
     "rimraf": "^2.5.4",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "webpack-merge": "^1.0.2"
   },
   "peerDependencies": {
     "react": ">= 15.0.0 < 16.0.0"
