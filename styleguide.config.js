@@ -4,7 +4,7 @@ const pkg = require('./package.json');
 
 module.exports = {
   title: pkg.name + ' ' + pkg.version, // eslint-disable-line prefer-template
-  components: './src/**/*.js',
+  components: './src/visibility-toggles.js',
   updateWebpackConfig(config) {
     return merge(
       config,
