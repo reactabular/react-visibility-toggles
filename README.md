@@ -38,7 +38,7 @@ const columns = [
 
 The following example shows how to integrate `react-visibility-toggles` with Reactabular:
 
-```javascript
+```jsx
 /*
 import React from 'react';
 import * as Table from 'reactabular-table';

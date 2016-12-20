@@ -1,5 +1,10 @@
 ## react-visibility-toggles
 
+1.1.1 / 2016-12-20
+==================
+
+  * Documentation - Use the right syntax highlighting for the example.
+
 1.1.0 / 2016-12-08
 ==================
 
