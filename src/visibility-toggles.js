@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types, no-unused-vars */
 // XXX: The prop type checking bugs out for some reason partially.
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const VisibilityToggles = ({
   columns,
@@ -65,17 +66,17 @@ VisibilityToggles.propTypes = {
    *   }
    * \]
    */
-  columns: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-  onToggleColumn: React.PropTypes.func,
-  isVisible: React.PropTypes.func,
+  columns: PropTypes.arrayOf(PropTypes.object).isRequired,
+  onToggleColumn: PropTypes.func,
+  isVisible: PropTypes.func,
   /**
    * Props attached to different parts of the component.
    */
-  props: React.PropTypes.shape({
-    container: React.PropTypes.object,
-    label: React.PropTypes.object,
-    value: React.PropTypes.object,
-    toggle: React.PropTypes.object
+  props: PropTypes.shape({
+    container: PropTypes.object,
+    label: PropTypes.object,
+    value: PropTypes.object,
+    toggle: PropTypes.object
   })
 };
 VisibilityToggles.defaultProps = {
